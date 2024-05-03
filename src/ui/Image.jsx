@@ -1,7 +1,7 @@
 import Emoji from '../img/Index_emoji.png';
 
 export function EmojiBlock() {
-    return(<>
+    return (<>
         <img src={Emoji} alt="emoji.png" className="Emoji" />
     </>)
 }
