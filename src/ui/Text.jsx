@@ -16,13 +16,29 @@ export const IndexText = () => (
     </>
 );
 
-export const SkillText = ({text}) => (
+export const SkillText = ({ text }) => (
     <>
         <div className="SkillTop1">
             저는 <span>{text}</span>을(를)
         </div>
         <div className="SkillTop2">
             다뤄본 경험이 있어요!
+        </div>
+    </>
+)
+
+export const MainProjectTitle = () => (
+    <>
+        <div className="MainProjectTitle font1">
+            <h1> MAIN PROJECT </h1>
+        </div>
+    </>
+)
+
+export const ClickProjectText = () => (
+    <>
+        <div className="ClickProject bouncy font3">
+            클릭하면 프로젝트 설명을 볼 수 있어요!
         </div>
     </>
 )

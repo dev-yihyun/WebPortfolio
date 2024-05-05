@@ -30,10 +30,27 @@
 }
 
 /* SKILL HOVER */
-.SkillDown img{
+.SkillDown img,.ProjectCard{
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; 
 }
-.SkillDown img:hover{
+.SkillDown img:hover,.ProjectCard:hover{
     transform: scale(1.1); /* 마우스를 올리면 이미지를 1.1배로 확대 */
     filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.15));
 }
+
+/* TEXT BOUNCE */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); /* 튀기 전 위치 */
+    }
+    40% {
+      transform: translateY(-20px); /* 최대로 튀는 높이 */
+    }
+    60% {
+      transform: translateY(-10px); /* 다음에 튀는 높이 */
+    }
+  }
+  
+  .bouncy {
+    animation: bounce 3.5s infinite; /* 애니메이션 적용 */
+  }
