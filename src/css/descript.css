@@ -1,0 +1,187 @@
+.Descriptimg{
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.2));
+}
+.Area4{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.DescriptLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.DescriptRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DescriptTop{
+    width: 400px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.DescriptTitle{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.DescriptLink img{
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.Descriptimg{
+    width: 400px;
+    height: 300px;
+    
+}
+.Descriptimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.DescriptBottom{
+    width: 400px;
+}
+.DescriptStack, .DescriptFunction{
+    margin-bottom: 15px;
+}
+
+.DescriptStack h1,.DescriptFunction h1,.DescriptRItem h1{
+    margin-bottom: 8px;
+    font-size: 2.2rem;
+}
+
+.DescriptRItem{
+    width: 500px;
+    margin-bottom: 30px;
+}
+.DescriptStack div,.DescriptFunction div,.DescriptRItem div{
+    font-size: 20px;
+}
+
+/* 큰 화면에 대한 스타일 */
+@media only screen and (min-width: 1025px) {
+    .Area4{
+        width: 100%;
+        height: 100vh;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .DescriptLeft{
+        width: 40vw;
+        height: 80vh;
+        justify-content: space-evenly;
+        align-items: end;
+        margin: 10px;
+    }
+    .DescriptRight{
+        width: 40vw;
+        height: 80vh;
+        align-items: start;
+        justify-content: space-evenly;
+        margin: 10px;
+    }
+    .DescriptTitle{
+        margin: 5px;
+        font-size: 1.1rem;
+    }
+    .Descriptimg{
+        height: 250px;
+    }
+}
+/* 중간 크기의 화면에 대한 스타일 */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .Area4{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .DescriptLeft{
+        width: 70vw;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    .DescriptRight{
+        width: 80vw;
+        justify-content: center;
+        margin: 10px;
+    }
+    .DescriptTitle{
+        font-size: 1rem;
+    }
+    .DescriptMiddle{
+        margin-bottom: 50px;
+    }
+}
+/* 작은 화면에 대한 스타일 */
+@media only screen and (max-width: 600px) {
+    .Area4{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .DescriptLeft{
+        width: 85vw;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        gap: 20px;
+    }
+    .DescriptRight{
+        width: 85vw;
+        justify-content: center;
+        margin: 10px;
+        gap: 20px;
+    }
+    .DescriptTop{
+        width: 97%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .DescriptTitle{
+        font-size: 12px;
+        margin: 5px;
+    }
+    .DescriptMiddle{
+        margin-bottom: 20px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Descriptimg{
+        width: 90%;
+        height: auto;
+    }
+    .Descriptimg img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .DescriptRItem{
+        width: 97%;
+    }
+    .DescriptBottom{
+        width: 97%;
+        gap: 10px;
+    }
+    .DescriptBottom h1{
+        font-size: 1.8rem;
+    }
+    .DescriptRItem h1{
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+}

@@ -1,8 +1,14 @@
 import React from "react";
-import ProjectM1 from '../img_project/projectM1.png';
 import { GitHubIcon, LinkIcon } from "./Image";
 
-function ProjectCardBlock({projectName,projectStack}) {
+function ProjectCardBlock({ projectName, projectStack, projectImg, projectGit }) {
+    const handleClick = (e) => {
+        if (!projectGit) {
+            e.preventDefault();
+            alert('비공개 입니다.');
+        }
+    };
+
     return (<>
         <div className="ProjectCard">
             <div className="CardTop">
@@ -10,12 +16,21 @@ function ProjectCardBlock({projectName,projectStack}) {
                     <LinkIcon />
                 </div>
                 <div className="cardProject">
-                    <img src={ProjectM1} alt="projectImg" />
+                    <img src={projectImg} alt="projectImg" />
                 </div>
                 <div className="cardGit">
-                    <a href="" target="blank">
-                        <GitHubIcon/>
+                    <a href={projectGit} target="blank" onClick={handleClick}>
+                        <GitHubIcon />
                     </a>
+                    {/*  {
+                        projectGit === ""
+                            ?
+                            null
+                            : <a href={projectGit} target="blank">
+                                <GitHubIcon />
+                            </a>
+                    } */}
+
                 </div>
             </div>
             <div className="CardBottom">
@@ -24,8 +39,8 @@ function ProjectCardBlock({projectName,projectStack}) {
                 </div>
                 <div className="CardStack font6">
                     {
-                        projectStack.map((item,index)=>{
-                            return(<div className="StackItem" key={index}>{item}</div>)
+                        projectStack.map((item, index) => {
+                            return (<div className="StackItem" key={index}>{item}</div>)
                         })
                     }
                 </div>
