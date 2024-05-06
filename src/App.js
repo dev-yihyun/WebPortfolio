@@ -1,3 +1,4 @@
+import AboutMe from "./component/AboutMeComponent";
 import Index from "./component/IndexComponent";
 import ProjectMain from "./component/ProjectMainComponent";
 import ProjectToy from "./component/ProjectToyComponent";
@@ -12,6 +13,7 @@ function App() {
       <Skill/>
       <ProjectMain/>
       <ProjectToy/>
+      <AboutMe/>
     </>
   );
 }
