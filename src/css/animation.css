@@ -30,10 +30,10 @@
 }
 
 /* SKILL HOVER */
-.SkillDown img,.ProjectCard{
+.SkillDown img,.ProjectCard,.ProjectBox{
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; 
 }
-.SkillDown img:hover,.ProjectCard:hover{
+.SkillDown img:hover,.ProjectCard:hover,.ProjectBox:hover{
     transform: scale(1.1); /* 마우스를 올리면 이미지를 1.1배로 확대 */
     filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.15));
 }

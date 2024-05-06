@@ -42,3 +42,13 @@ export const ClickProjectText = () => (
         </div>
     </>
 )
+
+export const ToyProjectTitle = () => (
+    <>
+        <div className="ToyProjectTitle font1">
+            <h1>
+                TOY PROJECT
+            </h1>
+        </div>
+    </>
+)

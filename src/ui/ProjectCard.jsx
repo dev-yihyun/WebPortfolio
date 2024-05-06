@@ -19,17 +19,10 @@ function ProjectCardBlock({ projectName, projectStack, projectImg, projectGit })
                     <img src={projectImg} alt="projectImg" />
                 </div>
                 <div className="cardGit">
-                    <a href={projectGit} target="blank" onClick={handleClick}>
+                    <a href={projectGit} target="_blank" rel="noreferrer noopener" onClick={handleClick}>
                         <GitHubIcon />
                     </a>
-                    {/*  {
-                        projectGit === ""
-                            ?
-                            null
-                            : <a href={projectGit} target="blank">
-                                <GitHubIcon />
-                            </a>
-                    } */}
+                    
 
                 </div>
             </div>

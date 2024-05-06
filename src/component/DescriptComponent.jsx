@@ -16,7 +16,7 @@ function DescriptBlock({ProjectInfo}) {
                         <h1>{ProjectInfo.projectName}</h1>
                     </div>
                     <div className="DescriptLink">
-                        <a target="blank" href={ProjectInfo.projectGit} onClick={handleClick}>
+                        <a href={ProjectInfo.projectGit} onClick={handleClick} target="_blank" rel="noreferrer noopener">
                             <GitHubIcon />
                         </a>
                         {/* 고민중 */}

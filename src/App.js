@@ -1,5 +1,6 @@
 import Index from "./component/IndexComponent";
 import ProjectMain from "./component/ProjectMainComponent";
+import ProjectToy from "./component/ProjectToyComponent";
 import Root from "./component/Root";
 import Skill from "./component/SkillComponent";
 
@@ -10,6 +11,7 @@ function App() {
       <Index/>
       <Skill/>
       <ProjectMain/>
+      <ProjectToy/>
     </>
   );
 }
