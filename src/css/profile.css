@@ -93,7 +93,14 @@
 .IntroArea p{
     font-size: 20px;
 }
+.IntroArea a{
+    color: black;
+    text-decoration: none;
+}
+.IntroArea a:hover{
+    text-decoration: underline;
 
+}
 /* 큰 화면에 대한 스타일 */
 @media only screen and (min-width: 1025px) {
     .ProfileTitle h1{

@@ -100,12 +100,12 @@ export const ProfileText = () => (
         </div>
         <div>
             <h1>이메일</h1>
-            <p>XXXXX@GAMIL.COM</p>
-            <p>XXXXX@NAVER.COM</p>
+            <p><a href="mailto:">XXXXX@gmail.com</a></p>
+            <p><a href="mailto:">XXXXX@naver.com</a></p>
         </div>
         <div>
             <h1>생년월일</h1>
-            <p>1999.XX.XX</p>
+            <p>1998.XX.XX</p>
         </div>
     </>
 )
