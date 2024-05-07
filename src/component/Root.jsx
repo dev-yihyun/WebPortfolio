@@ -5,6 +5,7 @@ import '../css/projectmain.css';
 import '../css/descript.css';
 import '../css/projecttoy.css';
 import '../css/aboutme.css';
+import '../css/profile.css';
 
 import '../css/animation.css';
 import '../css/font.css';

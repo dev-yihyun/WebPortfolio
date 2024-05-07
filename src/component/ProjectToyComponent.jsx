@@ -22,8 +22,8 @@ const projectList = [
         projectImg: ProjectT1,
         projectDate: "2020.09.19~2020.09.20",
         projectStack: ["Javascript"],
-        projectGit: "https://github.com/dev-yihyun/Hang_Man",
-        projectLink: "https://dev-yihyun.github.io/Hang_Man/"
+        projectGit: "",
+        projectLink: ""
     },
     {
         id: 2,
@@ -31,8 +31,8 @@ const projectList = [
         projectImg: ProjectT2,
         projectDate: "2020.09.27~2020.09.29",
         projectStack: ["Javascript"],
-        projectGit: "https://github.com/dev-yihyun/Number_Baseball",
-        projectLink: "https://dev-yihyun.github.io/Number_Baseball/"
+        projectGit: "",
+        projectLink: ""
     },
     {
         id: 3,
@@ -40,7 +40,7 @@ const projectList = [
         projectImg: ProjectT3,
         projectDate: "2024.03.07~2024.03.14",
         projectStack: ["Python"],
-        projectGit: "https://github.com/dev-yihyun/python_calculator",
+        projectGit: "",
         projectLink: ""
     }
 ];

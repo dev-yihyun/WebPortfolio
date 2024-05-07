@@ -1,5 +1,6 @@
 import AboutMe from "./component/AboutMeComponent";
 import Index from "./component/IndexComponent";
+import Profile from "./component/ProfileComponent";
 import ProjectMain from "./component/ProjectMainComponent";
 import ProjectToy from "./component/ProjectToyComponent";
 import Root from "./component/Root";
@@ -14,6 +15,7 @@ function App() {
       <ProjectMain/>
       <ProjectToy/>
       <AboutMe/>
+      <Profile/>
     </>
   );
 }
