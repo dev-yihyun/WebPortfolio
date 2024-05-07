@@ -1,7 +1,7 @@
 import React from "react";
 import { GitHubIcon } from "../ui/Image";
 
-function DescriptBlock({ProjectInfo}) {
+function DescriptBlock({ ProjectInfo }) {
     const handleClick = (e) => {
         if (!ProjectInfo.projectGit) {
             e.preventDefault();

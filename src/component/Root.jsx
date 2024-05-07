@@ -12,7 +12,7 @@ import '../css/footer.css';
 import '../css/animation.css';
 import '../css/font.css';
 
-function RootBlock(){
-    return(<></>)
+function RootBlock() {
+    return (<></>)
 }
 export default RootBlock;

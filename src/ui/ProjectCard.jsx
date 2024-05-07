@@ -22,7 +22,7 @@ function ProjectCardBlock({ projectName, projectStack, projectImg, projectGit })
                     <a href={projectGit} target="_blank" rel="noreferrer noopener" onClick={handleClick}>
                         <GitHubIcon />
                     </a>
-                    
+
 
                 </div>
             </div>

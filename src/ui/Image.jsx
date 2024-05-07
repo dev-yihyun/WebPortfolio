@@ -11,31 +11,31 @@ export function EmojiBlock() {
     </>)
 }
 
-export const LinkIcon = ()=>{
-    return(<>
+export const LinkIcon = () => {
+    return (<>
         <FaLink />
     </>)
 }
 
 export const GitHubIcon = () => {
-    return(<>
-        <img src={GitHub} alt="Github"/>
+    return (<>
+        <img src={GitHub} alt="Github" />
     </>)
 }
-export const RocketImg = ()=>{
-    return(<>
-        <img src={Rocket} alt='RocketImg'/>
+export const RocketImg = () => {
+    return (<>
+        <img src={Rocket} alt='RocketImg' />
     </>);
 }
 
 export const ProfileImg = () => {
-    return(<>
-        <img src={Profile} alt='ProfileImg'/>
+    return (<>
+        <img src={Profile} alt='ProfileImg' />
     </>);
 }
 
 export const TstoryIcon = () => {
-    return(<>
-        <img src={Tstory} alt='Tstroy'/>
+    return (<>
+        <img src={Tstory} alt='Tstroy' />
     </>)
 }

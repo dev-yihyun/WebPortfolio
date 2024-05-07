@@ -2,13 +2,13 @@ import React from "react";
 import { GitHubIcon } from "../ui/Image";
 
 function FooterBlock() {
-    return(<>
-    <section className="footer">
+    return (<>
+        <section className="footer">
             <div className="footer_content">
                 <div className="footer1">
                     <p>
                         해당 사이트는
-                        상업적 목적이 없는 
+                        상업적 목적이 없는
                         개인 포트폴리오 사이트 입니다.
                     </p>
                 </div>
@@ -17,7 +17,7 @@ function FooterBlock() {
                 </div>
                 <div className="footer3">
                     <ul>
-                        <li><a href="" target="blank"><GitHubIcon/>Git Hub</a></li>
+                        <li><a href="" target="blank"><GitHubIcon />Git Hub</a></li>
                         <li><a id="resume" href="">Resume</a></li>
                     </ul>
                 </div>

@@ -7,6 +7,7 @@ import ProjectM1 from '../img_project/projectM1.png';
 import ProjectM2 from '../img_project/projectM2.png';
 import ProjectM3 from '../img_project/projectM3.png';
 import ProjectM4 from '../img_project/projectM4.png';
+import ScrollFadeBlock from "../ui/ScrollFade";
 
 const projectList = [
     {
@@ -87,6 +88,7 @@ function ProjectMainBlock() {
 
     return (<>
         <div className="Area3">
+            <ScrollFadeBlock scrollfade="ProjectFade">
             <div className="MainProjectArea">
                 <MainProjectTitle />
                 <ClickProjectText />
@@ -110,6 +112,7 @@ function ProjectMainBlock() {
                 </div>
             </div>
             <Descript ProjectInfo={init}/>
+            </ScrollFadeBlock>
         </div>
     </>)
 }

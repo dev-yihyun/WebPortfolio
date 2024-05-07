@@ -15,41 +15,41 @@ function SkillBlock() {
 
     const imgList = [
         /* {id:0,name:'이것',path:'이것'}, */
-        {id:1,name:'자바스크립트',path:image1},
-        {id:2,name:'자바',path:image2},
-        {id:3,name:'리액트',path:image3},
-        {id:4,name:'Node.js',path:image4},
-        {id:5,name:'Mysql',path:image5},
-        {id:6,name:'Kotlin',path:image6},
-        {id:7,name:'파이썬',path:image7},
-        {id:8,name:'안드로이드',path:image8},
-        {id:9,name:'오라클',path:image9},
-        {id:10,name:'WebRTC',path:image10},
+        { id: 1, name: '자바스크립트', path: image1 },
+        { id: 2, name: '자바', path: image2 },
+        { id: 3, name: '리액트', path: image3 },
+        { id: 4, name: 'Node.js', path: image4 },
+        { id: 5, name: 'Mysql', path: image5 },
+        { id: 6, name: 'Kotlin', path: image6 },
+        { id: 7, name: '파이썬', path: image7 },
+        { id: 8, name: '안드로이드', path: image8 },
+        { id: 9, name: '오라클', path: image9 },
+        { id: 10, name: 'WebRTC', path: image10 },
     ];
 
-    const [text,setText] = useState('이것들')
+    const [text, setText] = useState('이것들')
 
-    const hadleMouseEnter = (newText) =>{
+    const hadleMouseEnter = (newText) => {
         setText(newText)
     }
-    const hadleMouseLeave = ()=>{
+    const hadleMouseLeave = () => {
         setText('이것들')
     }
 
-    return(<>
+    return (<>
         <div className="Area2">
             <div className="SkillTop font3">
-                <SkillText text={text}/>
+                <SkillText text={text} />
             </div>
             <div className="SkillDown">
 
-                {imgList.map( 
-                    (img,index)=>(
+                {imgList.map(
+                    (img, index) => (
                         <div key={index}>
-                            <img 
-                                src={img.path} 
-                                alt={`이미지 ${index+1}`}
-                                onMouseEnter={()=>hadleMouseEnter(img.name)}
+                            <img
+                                src={img.path}
+                                alt={`이미지 ${index + 1}`}
+                                onMouseEnter={() => hadleMouseEnter(img.name)}
                                 onMouseLeave={hadleMouseLeave}
                             />
                         </div>

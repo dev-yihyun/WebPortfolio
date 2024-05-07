@@ -1,16 +1,15 @@
 import React from "react";
 import Email from "../ui/Email";
+import { ContactMeText } from "../ui/Text";
 
 function ContactBlock() {
-    return(<>
+    return (<>
         <div className="Area8">
             <div className="ContactLeft font1">
-                <h1>
-                    Contact Me!
-                </h1>
+               <ContactMeText/>
             </div>
             <div className="ContactRight ">
-                <Email/>
+                <Email />
             </div>
         </div>
     </>)

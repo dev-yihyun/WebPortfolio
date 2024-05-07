@@ -7,18 +7,25 @@ import ProjectMain from "./component/ProjectMainComponent";
 import ProjectToy from "./component/ProjectToyComponent";
 import Root from "./component/Root";
 import Skill from "./component/SkillComponent";
+import ScrollFadeBlock from "./ui/ScrollFade";
 
 function App() {
   return (
     <>
       <Root/>
       <Index/>
-      <Skill/>
+      <ScrollFadeBlock scrollfade="SkillFade">
+        <Skill/>
+      </ScrollFadeBlock>
       <ProjectMain/>
-      <ProjectToy/>
+      <ScrollFadeBlock scrollfade="ToyFade">
+        <ProjectToy/>
+      </ScrollFadeBlock>
       <AboutMe/>
       <Profile/>
-      <Contact/>
+      <ScrollFadeBlock scrollfade="ContactFade">
+        <Contact/>
+      </ScrollFadeBlock>
       <Footer/>
     </>
   );

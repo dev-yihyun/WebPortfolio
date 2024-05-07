@@ -7,15 +7,15 @@ import ProjectBox from "../ui/ProjectBox";
 
 
 const projectList = [
-/*     {
-        id: 0,
-        projectName: "ProjectName",
-        projectImg: "",
-        projectDate: "2020.09.19~2020.09.20",
-        projectStack: ["Javascript"],
-        projectGit: "https://github.com/",
-        projectLink: ""
-    }, */
+    /*     {
+            id: 0,
+            projectName: "ProjectName",
+            projectImg: "",
+            projectDate: "2020.09.19~2020.09.20",
+            projectStack: ["Javascript"],
+            projectGit: "https://github.com/",
+            projectLink: ""
+        }, */
     {
         id: 1,
         projectName: "HangMan",
@@ -50,19 +50,19 @@ function ProjectToyBlock() {
     return (<>
         <div className="Area5">
             <div className="ToyProjectArea">
-                <ToyProjectTitle/>
+                <ToyProjectTitle />
                 <div className="ToyProject">
                     {
                         projectList.map((project) => {
                             return (
                                 <ProjectBox
-                                key={project.id}
-                                projectName={project.projectName}
-                                projectDate = {project.projectDate}
-                                projectStack={project.projectStack}
-                                projectGit = {project.projectGit}
-                                projectImg={project.projectImg}
-                                projectLink={project.projectLink}
+                                    key={project.id}
+                                    projectName={project.projectName}
+                                    projectDate={project.projectDate}
+                                    projectStack={project.projectStack}
+                                    projectGit={project.projectGit}
+                                    projectImg={project.projectImg}
+                                    projectLink={project.projectLink}
                                 />
                             )
                         })

@@ -7,11 +7,11 @@ function IndexBlock() {
     return (<>
         <div className="Area1">
             <div className="IndexLeft">
-                <EmojiBlock/>
+                <EmojiBlock />
             </div>
             <div className="IndexRight IndexAni">
-                <IndexTitle/>
-                <IndexText/>
+                <IndexTitle />
+                <IndexText />
             </div>
         </div>
 

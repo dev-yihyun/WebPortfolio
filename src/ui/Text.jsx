@@ -109,3 +109,11 @@ export const ProfileText = () => (
         </div>
     </>
 )
+
+export const ContactMeText = () => (
+    <>
+        <h1>
+            Contact Me!
+        </h1>
+    </>
+)
