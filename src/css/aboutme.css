@@ -169,8 +169,7 @@
         width: 100%;
     }
     .AboutRight{
-        height: auto;
-        width: 85%;
+        width: 90vw;
     }
     .AboutRight li{    
         font-size: 17px;
