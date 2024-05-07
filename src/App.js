@@ -1,4 +1,5 @@
 import AboutMe from "./component/AboutMeComponent";
+import Contact from "./component/ContactComponent";
 import Index from "./component/IndexComponent";
 import Profile from "./component/ProfileComponent";
 import ProjectMain from "./component/ProjectMainComponent";
@@ -16,6 +17,7 @@ function App() {
       <ProjectToy/>
       <AboutMe/>
       <Profile/>
+      <Contact/>
     </>
   );
 }
