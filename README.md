@@ -1,7 +1,7 @@
 # ✨Yi-Hyun Kim Portfolio
 
 <p align="center">
-  <img src="">
+  <img src="https://github.com/dev-yihyun/WebPortfolio/assets/67820737/2c722e72-f2d1-44c0-a764-60a4a115f848">
 </p>
 
 ## [프로젝트 소개]
