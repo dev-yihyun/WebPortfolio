@@ -1,4 +1,4 @@
-# ✨Yi-Hyun Kim Portfolio [🔗바로가기](https://dev-yihyun.github.io/,"Yi-Hyun Kim Portfolio")
+# ✨[Yi-Hyun Kim Portfolio🔗](https://dev-yihyun.github.io/, "Yi-Hyun Kim Portfolio")
 
 <p align="center">
   <img src="https://github.com/dev-yihyun/WebPortfolio/assets/67820737/2c722e72-f2d1-44c0-a764-60a4a115f848">
