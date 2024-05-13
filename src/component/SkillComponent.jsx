@@ -9,6 +9,7 @@ import image7 from '../img/Skill_python.png'
 import image8 from '../img/Skill_android.png'
 import image9 from '../img/Skill_oracle.png'
 import image10 from '../img/Skill_webrtc.png'
+import image11 from '../img/Skill_socketio.png'
 import { SkillText } from "../ui/Text";
 
 function SkillBlock() {
@@ -25,6 +26,7 @@ function SkillBlock() {
         { id: 8, name: '안드로이드', path: image8 },
         { id: 9, name: '오라클', path: image9 },
         { id: 10, name: 'WebRTC', path: image10 },
+        { id: 10, name: 'Socket.io', path: image11 },
     ];
 
     const [text, setText] = useState('이것들')
