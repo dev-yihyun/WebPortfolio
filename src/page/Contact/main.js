@@ -7,9 +7,17 @@ function Contact() {
         <>
             <div className="Area8">
                 <div className="ContactLeft font1">
-                    <h1>Contact Me!</h1>
+                    <div className="ContactTitle">
+                        <h1>Thank you</h1>
+                    </div>
+                    <div className="ContactMessage">
+                        <p>
+                            사용자 중심사고로 생각하며
+                            <br /> 사용자에게 좋은 서비스를 제공하고싶습니다.
+                        </p>
+                    </div>
                 </div>
-                <div className="ContactRight ">
+                <div className="ContactRight">
                     <Email />
                 </div>
             </div>
