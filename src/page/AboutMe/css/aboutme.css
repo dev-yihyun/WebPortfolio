@@ -1,4 +1,4 @@
-.Area6{
+.Area6 {
     list-style: none;
     width: 100%;
     height: auto;
@@ -15,8 +15,8 @@
     overflow-x: hidden;
     /* position: relative; */
 }
-    
-.AboutLeft{    
+
+.AboutLeft {
     width: 700px;
     height: 80vh;
     display: flex;
@@ -25,7 +25,7 @@
     align-items: center;
     position: relative;
 }
-.AboutRight{
+.AboutRight {
     width: 800px;
     display: flex;
     flex-direction: column;
@@ -33,14 +33,14 @@
     gap: 10px;
 }
 
-.AboutRight li{
+.AboutRight li {
     display: block;
     line-height: 60px;
     color: #909090;
     /* letter-spacing: -1.8px; */
     text-decoration: none;
 }
-.AboutRight li strong{
+.AboutRight li strong {
     position: relative;
     margin: 0 22px 0 0;
     color: #000;
@@ -54,41 +54,38 @@
     width: 0;
     height: 8px;
     background-color: #f54;
-    content: '';
+    content: "";
 }
 
-
-
-    
 .AboutRight li:first-child strong:after {
-    content: '01';
+    content: "01";
 }
 .AboutRight li:nth-child(2) strong:after {
-    content: '02';
+    content: "02";
 }
 .AboutRight li:nth-child(3) strong:after {
-    content: '03';
+    content: "03";
 }
 .AboutRight li:nth-child(4) strong:after {
-    content: '04';
+    content: "04";
 }
 .AboutRight li:nth-child(5) strong:after {
-    content: '05';
+    content: "05";
 }
 .AboutRight li:nth-child(6) strong:after {
-    content: '06';
+    content: "06";
 }
 .AboutRight li:nth-child(7) strong:after {
-    content: '07';
+    content: "07";
 }
 .AboutRight li:nth-child(8) strong:after {
-    content: '08';
+    content: "08";
 }
 .AboutRight li:nth-child(9) strong:after {
-    content: '09';
+    content: "09";
 }
 
-.AboutRight strong:after{
+.AboutRight strong:after {
     position: absolute;
     top: 9px;
     right: -16px;
@@ -99,90 +96,87 @@
 }
 .AboutRight li:hover strong:before {
     width: 100%;
-    -webkit-transition: width .3s ease-out;
-    -moz-transition: width .3s ease-out;
-    transition: width .3s ease-out;
+    -webkit-transition: width 0.3s ease-out;
+    -moz-transition: width 0.3s ease-out;
+    transition: width 0.3s ease-out;
 }
-.AboutRight li:hover{
+.AboutRight li:hover {
     color: #000;
 }
 
-.AboutImg img{
+.AboutImg img {
     width: 100%;
     height: 100%;
 }
 
-.AboutImg{
-    
-    
+.AboutImg {
 }
-.AboutTitle{
+.AboutTitle {
     position: absolute; /* 절대 위치로 설정 */
     top: 0; /* 부모 요소의 상단에 위치 */
     left: 10; /* 부모 요소의 좌측에 위치 */
     z-index: -1; /* Title을 C 뒤로 보내는 부분 */
     margin: 10px;
 }
-.AboutTitle h1{
-    color: #DAE3F3;
+.AboutTitle h1 {
+    color: #dae3f3;
     font-weight: bolder;
 }
 /* 큰 화면에 대한 스타일 */
 @media only screen and (min-width: 1025px) {
-    .AboutRight{
-        height: 80vh;
+    .AboutRight {
+        height: auto;
     }
-    
-    .AboutRight li{
+
+    .AboutRight li {
         font-size: 30px;
     }
-    .AboutImg{
+    .AboutImg {
         width: 550px;
         height: 550px;
     }
-    .AboutTitle h1{
+    .AboutTitle h1 {
         font-size: 10rem;
     }
-
 }
 /* 중간 크기의 화면에 대한 스타일 */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .AboutRight{
+    .AboutRight {
         height: auto;
-        width: 90%;
+        width: 100%;
     }
-    .AboutRight li{    
-        font-size: 22px;
+    .AboutRight li {
+        font-size: 20px;
     }
-    .AboutImg{
+    .AboutImg {
         width: 500px;
         height: 500px;
     }
-    .AboutTitle h1{
+    .AboutTitle h1 {
         font-size: 9rem;
     }
 }
 /* 작은 화면에 대한 스타일 */
 @media only screen and (max-width: 600px) {
-    .AboutLeft{
+    .AboutLeft {
         height: 45vh;
         width: 100%;
     }
-    .AboutRight{
+    .AboutRight {
         width: 90vw;
     }
-    .AboutRight li{    
+    .AboutRight li {
         font-size: 17px;
     }
-    
+
     .AboutRight li strong:before {
         bottom: 3px;
     }
-    .AboutImg{
+    .AboutImg {
         width: 300px;
         height: 300px;
     }
-    .AboutTitle h1{
+    .AboutTitle h1 {
         font-size: 4.5rem;
     }
 }

@@ -24,18 +24,6 @@ function AboutMe() {
                             <br />
                         </li>
                         <li>
-                            <strong>크고 작은 한계를 넘는것</strong>을 좋아합니다.
-                            <br />
-                        </li>
-                        <li>
-                            많은것을 <strong>배우고 성장하는 것</strong>을 좋아합니다.
-                            <br />
-                        </li>
-                        <li>
-                            <strong>다양한 생각을 자유롭게</strong>나누는 것을 좋아합니다.
-                            <br />
-                        </li>
-                        <li>
                             <strong>문제를 분석</strong>하고 <strong>해결법을 찾는것</strong>에
                             즐거움을 느낍니다.
                             <br />
@@ -43,6 +31,9 @@ function AboutMe() {
                         <li>
                             <strong>익숙한 것을 새롭게, 가치있게</strong>만드는 것을 좋아합니다.
                             <br />
+                        </li>
+                        <li>
+                            <strong>코드의 재사용성</strong>을 높이는 것을 좋아합니다.
                         </li>
                     </div>
                 </ScrollFadeBlock>
