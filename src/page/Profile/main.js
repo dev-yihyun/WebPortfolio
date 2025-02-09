@@ -59,8 +59,8 @@ function Profile() {
                                 ))}
                             </div>
                             <div>
-                                <h1>생년월일</h1>
-                                <p>{profileData.birthday}</p>
+                                <h1>경력</h1>
+                                <p>{profileData.career}</p>
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,4 @@
-
-.Area7{
+.Area7 {
     width: 100%;
     height: auto;
     display: flex;
@@ -13,7 +12,7 @@
     overflow-x: hidden;
     gap: 20px;
 }
-.ProfileLeft{
+.ProfileLeft {
     width: 400px;
     height: 60vh;
     display: flex;
@@ -22,7 +21,7 @@
     align-items: center;
     margin: 10px;
 }
-.ProfileRight{
+.ProfileRight {
     width: 800px;
     height: 70vh;
     margin: 10px;
@@ -32,16 +31,16 @@
     justify-content: space-evenly;
     align-items: start;
 }
-.ProfileTop{
+.ProfileTop {
     width: 400px;
-    height: 400px;;
+    height: 400px;
     margin: 10px;
 }
-.ProfileTop img{
+.ProfileTop img {
     width: 100%;
     height: 100%;
 }
-.ProfileBottom{
+.ProfileBottom {
     width: 300px;
     height: 100px;
     display: flex;
@@ -49,25 +48,25 @@
     justify-content: space-around;
     align-items: center;
 }
-.ProfileBottom img{
+.ProfileBottom img {
     width: 80px;
     height: 80px;
     margin: 10px;
     cursor: pointer;
 }
-.ProfileTitle{
+.ProfileTitle {
     position: absolute; /* 절대 위치로 설정 */
     top: 0; /* 부모 요소의 상단에 위치 */
     right: 0; /* 부모 요소의 좌측에 위치 */
-    z-index: -1; 
+    z-index: -1;
     margin: 20px;
 }
-.ProfileTitle h1{
-    color: #D6DCE5;
+.ProfileTitle h1 {
+    color: #d6dce5;
     font-weight: bolder;
     font-size: 9rem;
 }
-.IntroArea{
+.IntroArea {
     width: 80%;
     height: 50vh;
     display: flex;
@@ -76,68 +75,66 @@
     align-items: start;
 }
 
-
-.Introduce{
+.Introduce {
     font-size: 2rem;
 }
-.Introduce .IntroduceItem{
+.Introduce .IntroduceItem {
     font-size: 2.5rem;
 }
-.IntroduceItem strong{
+.IntroduceItem strong {
     position: relative;
     margin: 0 8px 0 0;
 }
-.IntroArea h1{
+.IntroArea h1 {
     margin-bottom: 10px;
 }
-.IntroArea p{
+.IntroArea p {
     font-size: 20px;
 }
-.IntroArea a{
+.IntroArea a {
     color: black;
     text-decoration: none;
 }
-.IntroArea a:hover{
+.IntroArea a:hover {
     text-decoration: underline;
-
 }
 /* 큰 화면에 대한 스타일 */
 @media only screen and (min-width: 1025px) {
-    .ProfileTitle h1{
+    .ProfileTitle h1 {
         font-size: 11rem;
     }
 }
 /* 중간 크기의 화면에 대한 스타일 */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .Area7{
+    .Area7 {
         flex-direction: column;
     }
-    .ProfileLeft{
+    .ProfileLeft {
         height: 60vh;
     }
-    
-    .ProfileRight{
+
+    .ProfileRight {
         width: 500px;
     }
 
-    .ProfileTitle{
-        left: 0; 
+    .ProfileTitle {
+        left: 0;
     }
-    .ProfileTitle h1{
+    .ProfileTitle h1 {
         font-size: 6rem;
     }
 }
 /* 작은 화면에 대한 스타일 */
 @media only screen and (max-width: 600px) {
-    .ProfileLeft{
-       width: 300px;
-       height: 45vh;
+    .ProfileLeft {
+        width: 300px;
+        height: 45vh;
     }
-    .ProfileTop{
+    .ProfileTop {
         width: 250px;
         height: 250px;
     }
-    .ProfileBottom{
+    .ProfileBottom {
         width: 200px;
         height: 100px;
         display: flex;
@@ -145,26 +142,26 @@
         justify-content: space-around;
         align-items: center;
     }
-    .ProfileBottom img{
+    .ProfileBottom img {
         width: 50px;
         height: 50px;
         margin: 10px;
         cursor: pointer;
     }
-    .ProfileRight{
+    .ProfileRight {
         width: 300px;
         height: 59vh;
     }
-    .IntroArea div h1{
+    .IntroArea div h1 {
         font-size: 1.6rem;
     }
     .Introduce .IntroduceItem {
         font-size: 1.9rem;
     }
-    .ProfileTitle{
-        left: 0; 
+    .ProfileTitle {
+        left: 0;
     }
-    .ProfileTitle h1{
+    .ProfileTitle h1 {
         font-size: 3.3rem;
     }
 }
