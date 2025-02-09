@@ -12,13 +12,10 @@ function Index() {
                     <h1 className="IndexTitle2 font1">YI-HYUN</h1>
                     <div className="IndexText font2">
                         <div>
-                            <strong>배우고 성장</strong> 하는 것을 좋아합니다.
-                            <br />
+                            끊임없이 <strong>성장하기 위해 노력</strong>합니다.
                         </div>
                         <div>
-                            <strong>다양한 시각</strong> 으로 <strong>문제를 해결</strong> 하는 것에
-                            즐거움을 느낍니다.
-                            <br />
+                            <strong>소통을 중요시하는 </strong> 개발자 입니다.
                         </div>
                     </div>
                 </div>

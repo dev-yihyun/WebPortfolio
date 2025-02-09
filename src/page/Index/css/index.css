@@ -41,6 +41,14 @@
 .IndexText div {
     margin-bottom: 8px;
 }
+.IndexText strong {
+    /* color: #2c3e50; */
+    /* color: #5d5c98; */
+    /* color: #15616d; */
+    /* color: #ff6b6b; */
+    /* color: #7b7bfc; */
+    color: #4e4efe;
+}
 /* 큰 화면에 대한 스타일 */
 @media only screen and (min-width: 1025px) {
     .IndexTitle1 {
@@ -50,10 +58,10 @@
         font-size: 8rem;
     }
     .IndexText {
-        font-size: 1.4rem;
+        font-size: 32px;
     }
     .IndexText strong {
-        font-size: 2rem;
+        font-size: 48px;
     }
 }
 /* 중간 크기의 화면에 대한 스타일 */
@@ -68,12 +76,12 @@
         font-size: 20px;
     }
     .IndexText strong {
-        font-size: 1.5rem;
+        font-size: 36px;
     }
 }
 /* 작은 화면에 대한 스타일 */
 @media only screen and (max-width: 600px) {
-    .Area1 {
+    .Area {
         height: 100vh;
         margin-bottom: 30px;
     }
@@ -91,7 +99,10 @@
         font-size: 3.5rem;
     }
     .IndexText {
-        font-size: 19px;
+        font-size: 18px;
+    }
+    .IndexText strong {
+        font-size: 30px;
     }
 }
 /* INDEX */
