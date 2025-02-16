@@ -46,7 +46,7 @@
     background-color: white;
     border-radius: 10px;
     width: 300px;
-    height: 455px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -98,7 +98,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    gap: 5px;
+    gap: 10px;
 }
 
 .CardName {
