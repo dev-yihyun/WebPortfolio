@@ -3,9 +3,9 @@ import "../css/descript.css";
 
 function Description({ ProjectInfo }) {
     const handleClick = (e) => {
-        if (!ProjectInfo.projectGit) {
+        if (!ProjectInfo.projectGit || ProjectInfo.projectGit === "") {
             e.preventDefault();
-            alert("비공개 입니다.");
+            alert("접근할 수 없습니다.");
         }
     };
     return (
@@ -17,14 +17,21 @@ function Description({ ProjectInfo }) {
                             <h1>{ProjectInfo.projectName}</h1>
                         </div>
                         <div className="DescriptLink">
-                            <a
-                                href={ProjectInfo.projectGit}
-                                onClick={handleClick}
-                                target="_blank"
-                                rel="noreferrer noopener"
-                            >
-                                <img src={GitHub} alt="Github" />
-                            </a>
+                            {ProjectInfo.projectGit === "" ? (
+                                <></>
+                            ) : (
+                                <>
+                                    <a
+                                        href={ProjectInfo.projectGit}
+                                        onClick={handleClick}
+                                        target="_blank"
+                                        rel="noreferrer noopener"
+                                    >
+                                        <img src={GitHub} alt="Github" />
+                                    </a>
+                                </>
+                            )}
+
                             {/* 고민중 */}
                             {/* <img src={linkpng} class=""/> */}
                         </div>

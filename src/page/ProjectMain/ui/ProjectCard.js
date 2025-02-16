@@ -9,7 +9,7 @@ function ProjectCardBlock({ projectName, projectStack, projectImg, projectGit })
             alert("준비중 입니다.");
         }
 
-        if (!projectGit) {
+        if (!projectGit || projectGit === "") {
             e.preventDefault();
             alert("비공개 입니다.");
         }
@@ -26,14 +26,20 @@ function ProjectCardBlock({ projectName, projectStack, projectImg, projectGit })
                         <img src={projectImg} alt="projectImg" />
                     </div>
                     <div className="cardGit">
-                        <a
-                            href={projectGit}
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            onClick={handleClick}
-                        >
-                            <img src={GitHub} alt="Github" />
-                        </a>
+                        {projectGit === "" ? (
+                            <></>
+                        ) : (
+                            <>
+                                <a
+                                    href={projectGit}
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                                    onClick={handleClick}
+                                >
+                                    <img src={GitHub} alt="Github" />
+                                </a>
+                            </>
+                        )}
                     </div>
                 </div>
                 <div className="CardBottom">
