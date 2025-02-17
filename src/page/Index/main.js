@@ -7,9 +7,10 @@ function Index() {
                 <div className="IndexLeft">
                     <img src={Emoji} alt="emoji.png" className="Emoji" />
                 </div>
-                <div className="IndexRight IndexAni">
-                    <h1 className="IndexTitle1 font1">FRONTEND</h1>
-                    <h1 className="IndexTitle2 font1">YI-HYUN</h1>
+                <div className="background-blur "></div>
+                <div className="IndexRight">
+                    <p className="IndexTitle1 font1">FRONTEND</p>
+                    <p className="IndexTitle2 font1">YI-HYUN</p>
                     <div className="IndexText font2">
                         <div>
                             끊임없이 <strong>성장하기 위해 노력</strong>합니다.
