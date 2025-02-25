@@ -1,199 +1,310 @@
-.Area3 {
-    width: 100%;
-    height: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+/*.projectmain-container,
+ .projectmain-click,
+.projectmain-title,
+.projectmain-cardlist {
+    border: 1px solid red;
+}*/
+.projectmain-container {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
     overflow-x: hidden;
     overflow-y: hidden;
 }
-
-.MainProjectArea {
-    flex-direction: column;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 50px;
+a {
+    color: #0a0a0a;
 }
-.MainProjectTitle {
-    width: 90%;
-    text-align: right;
-    font-weight: bolder;
-    color: #797979;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-.ClickProject {
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.MainProject {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    gap: 30px;
-    margin-bottom: 50px;
-}
-.ProjectCard {
-    background-color: white;
-    border-radius: 10px;
-    width: 300px;
-    height: 470px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    cursor: pointer;
-    margin: 20px;
-    padding: 20px;
-    gap: 20px;
-}
-.CardTop {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    border-radius: 10px;
-}
-.cardProject img {
-    width: 100%;
-    height: 300px;
-    clip-path: polygon(0 0, 70% 0%, 100% 30%, 100% 80%, 100% 100%, 30% 100%, 0% 70%, 0% 20%);
-    filter: brightness(85%);
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-.cardGit {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-.cardGit img {
-    width: 40px;
-    height: 40px;
-}
-.cardLink {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 30px;
-}
-
-.cardLink img {
-    width: 40px;
-    height: 40px;
-}
-.CardBottom {
-    width: 100%;
-    height: 125px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 10px;
-}
-
-.CardName {
-    margin-bottom: 10px;
-}
-
-.CardStack {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-.StackItem {
-    background-color: #b9d3f5;
-    color: white;
-    border-radius: 3px;
-    font-weight: bold;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 /* 큰 화면에 대한 스타일 */
 @media only screen and (min-width: 1025px) {
-    .MainProjectTitle {
-        font-size: 4.3rem;
+    .projectmain-container {
+        padding: 20px;
+        padding-bottom: 100px;
+        padding-top: 50px;
     }
-    .ClickProject {
-        font-size: 2rem;
+    .projectmain-title {
+        text-align: right;
+        font-weight: bolder;
+        color: #797979;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        align-items: center;
+        justify-content: center;
+        font-size: 128px;
     }
-}
+    .projectmain-click {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        font-weight: bold;
+    }
 
+    /*  */
+    .projectmain-cardlist {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .projectcard-container {
+        background-color: #fffafa;
+        border-radius: 10px;
+        width: 280px;
+        height: 470px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .projectcard-top {
+        position: relative;
+    }
+
+    .projectcard-img img {
+        width: 100%;
+        height: 300px;
+        clip-path: polygon(0 0, 70% 0%, 100% 30%, 100% 80%, 100% 100%, 30% 100%, 0% 70%, 0% 20%);
+        filter: brightness(85%);
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .projectcard-git {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 40px;
+    }
+
+    .projectcard-link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 40px;
+    }
+
+    .projectcard-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 15px;
+    }
+    .projectcard-cardname {
+    }
+    .projectcard-stack {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    .projectcard-Item {
+        background-color: #b9d3f5;
+        color: white;
+        border-radius: 3px;
+        font-weight: bold;
+        padding: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    /* .projectcard-img img,
+    .projectcard-git img {
+        width: 100px;
+        height: 100px;
+    } */
+}
 /* 중간 크기의 화면에 대한 스타일 */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .MainProjectTitle {
-        font-size: 3rem;
+    .projectmain-container {
+        padding: 20px;
+        padding-bottom: 100px;
+        padding-top: 50px;
     }
-    .ClickProject {
-        font-size: 1.8rem;
-    }
-}
-
-/* 작은 화면에 대한 스타일 */
-@media only screen and (max-width: 600px) {
-    .MainProjectTitle {
-        font-size: 1.6rem;
-    }
-    .ClickProject {
-        font-size: 1rem;
-    }
-    .ProjectCard {
-        width: 230px;
-        height: 340px;
-        gap: 10px;
-    }
-    .CardTop {
-        height: 200px;
-    }
-    .cardProject img {
-        width: 100%;
-        height: 200px;
-        clip-path: polygon(0 0, 70% 0%, 100% 30%, 100% 80%, 100% 100%, 30% 100%, 0% 70%, 0% 20%);
-        border-radius: 10px;
-    }
-    .cardGit img {
-        width: 25px;
-        height: 25px;
-    }
-    .cardLink {
-        font-size: 25px;
-    }
-
-    .CardBottom {
+    .projectmain-title {
+        text-align: right;
+        font-weight: bolder;
+        color: #797979;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        align-items: center;
         justify-content: center;
+        font-size: 112px;
+    }
+    .projectmain-click {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    /*  */
+    .projectmain-cardlist {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .projectcard-container {
+        background-color: #fffafa;
+        border-radius: 10px;
+        width: 280px;
+        height: 470px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .projectcard-top {
+        position: relative;
+    }
+
+    .projectcard-img img {
+        width: 100%;
+        height: 300px;
+        clip-path: polygon(0 0, 70% 0%, 100% 30%, 100% 80%, 100% 100%, 30% 100%, 0% 70%, 0% 20%);
+        filter: brightness(85%);
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .projectcard-git {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 40px;
+    }
+
+    .projectcard-link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 40px;
+    }
+
+    .projectcard-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
         align-items: start;
-        gap: 10px;
+        gap: 15px;
     }
-
-    .CardName {
-        font-size: 14px;
+    .projectcard-cardname {
     }
-
-    .CardStack {
-        gap: 8px;
+    .projectcard-stack {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        flex-wrap: wrap;
     }
-    .StackItem {
-        font-size: 14px;
+    .projectcard-Item {
+        background-color: #b9d3f5;
+        color: white;
+        border-radius: 3px;
+        font-weight: bold;
+        padding: 5px;
         padding-left: 8px;
         padding-right: 8px;
     }
 }
+/* 작은 화면에 대한 스타일 */
+@media only screen and (max-width: 600px) {
+    .projectmain-container {
+        padding: 20px;
+        padding-bottom: 100px;
+        padding-top: 50px;
+    }
+    .projectmain-title {
+        text-align: start;
+        font-weight: bolder;
+        color: #797979;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        align-items: center;
+        justify-content: center;
+        font-size: 60px;
+    }
+    .projectmain-click {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        font-weight: bold;
+    }
 
-/* TEXT BOUNCE */
+    /*  */
+    .projectmain-cardlist {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .projectcard-container {
+        background-color: #fffafa;
+        border-radius: 10px;
+        width: 280px;
+        height: 420px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .projectcard-top {
+        position: relative;
+    }
+
+    .projectcard-img img {
+        width: 100%;
+        height: 240px;
+        clip-path: polygon(0 0, 70% 0%, 100% 30%, 100% 80%, 100% 100%, 30% 100%, 0% 70%, 0% 20%);
+        filter: brightness(85%);
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .projectcard-git {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 35px;
+    }
+
+    .projectcard-link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 35px;
+    }
+    .projectcard-bottom {
+        display: flex;
+        flex-direction: column;
+
+        gap: 15px;
+    }
+    .projectcard-stack {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .projectcard-Item {
+        background-color: #b9d3f5;
+        color: white;
+        border-radius: 3px;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    .projectmain-container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
 @keyframes bounce {
     0%,
     20%,
@@ -212,4 +323,11 @@
 
 .bouncy {
     animation: bounce 3.5s infinite; /* 애니메이션 적용 */
+}
+
+.ProjectBox:hover,
+.projectcard-container:hover {
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.15));
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }

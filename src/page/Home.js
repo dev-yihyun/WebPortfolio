@@ -1,4 +1,4 @@
-import ScrollFade from "../component/event/ScrollFade";
+import ScrollFadeBlock from "../component/event/ScrollFade";
 import AboutMe from "./AboutMe/main";
 import Contact from "./Contact/main";
 import Footer from "./Footer/main";
@@ -12,18 +12,18 @@ function Home() {
     return (
         <>
             <Index />
-            <ScrollFade scrollfade="SkillFade">
+            <ScrollFadeBlock scrollfade="SkillFade">
                 <Skill />
-            </ScrollFade>
+            </ScrollFadeBlock>
             <ProjectMain />
-            <ScrollFade scrollfade="ToyFade">
+            <ScrollFadeBlock scrollfade="ToyFade">
                 <ProjectToy />
-            </ScrollFade>
+            </ScrollFadeBlock>
             <AboutMe />
             <Profile />
-            <ScrollFade scrollfade="ContactFade">
+            <ScrollFadeBlock scrollfade="ContactFade">
                 <Contact />
-            </ScrollFade>
+            </ScrollFadeBlock>
             <Footer />
         </>
     );

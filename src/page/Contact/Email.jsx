@@ -11,7 +11,11 @@ function EmailBlock() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-
+        // 입력값 검증
+        if (!email.trim() || !title.trim() || !message.trim()) {
+            alert("양식을 정확히 입력해주세요.");
+            return;
+        }
         emailjs
             .sendForm(
                 process.env.REACT_APP_EMAILJS_SERVICE_ID,
