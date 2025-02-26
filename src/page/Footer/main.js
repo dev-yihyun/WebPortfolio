@@ -1,6 +1,7 @@
 import React from "react";
 import "../Footer/css/footer.css";
 import GitHub from "../Footer/img/Icon_github.png";
+import projectList from "./projectList";
 
 function Footer() {
     return (
@@ -12,14 +13,14 @@ function Footer() {
                     </div>
                     <div className="footer2">
                         <span>
-                            © <a href="">YiHyun Kim</a> 2024, All rights reserved.
+                            © <a href={projectList.web}>YiHyun Kim</a> 2024, All rights reserved.
                         </span>
                     </div>
                     <div className="footer3">
                         <ul>
                             <li>
                                 <a
-                                    href="https://github.com/dev-yihyun/"
+                                    href={projectList.github}
                                     target="_blank"
                                     rel="noreferrer noopener"
                                 >
@@ -29,7 +30,7 @@ function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="https://devyihyun.tistory.com/"
+                                    href={projectList.blog}
                                     target="_blank"
                                     rel="noreferrer noopener"
                                     id="resume"

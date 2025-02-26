@@ -1,5 +1,5 @@
 .aboutme-container {
-    border: 1px solid red;
+    overflow: hidden;
 }
 
 /* 큰 화면에 대한 스타일 */
@@ -28,10 +28,10 @@
         position: relative;
     }
     .aboutme-title {
-        position: absolute; /* 절대 위치로 설정 */
-        top: 0; /* 부모 요소의 상단에 위치 */
-        left: 0; /* 부모 요소의 좌측에 위치 */
-        z-index: -1; /* Title을 C 뒤로 보내는 부분 */
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
     .aboutme-title h1 {
         color: #dae3f3;
@@ -54,7 +54,7 @@
         letter-spacing: -1.8px;
         text-decoration: none;
         font-size: 30px;
-        width: fit-content; /* 내용 길이에 맞는 너비 설정 */
+        width: fit-content;
     }
 
     .aboutme-right li strong {
@@ -133,12 +133,11 @@
         padding: 50px 20px;
         gap: 20px;
     }
-    img {
-        width: 550px;
-        height: 550px;
+    .aboutme-left img {
+        width: 500px;
+        height: 500px;
     }
     .aboutme-left {
-        width: 600px;
         height: 70vh;
         display: flex;
         flex-direction: column;
@@ -147,15 +146,15 @@
         position: relative;
     }
     .aboutme-title {
-        position: absolute; /* 절대 위치로 설정 */
-        top: 0; /* 부모 요소의 상단에 위치 */
-        left: 0; /* 부모 요소의 좌측에 위치 */
-        z-index: -1; /* Title을 C 뒤로 보내는 부분 */
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
     .aboutme-title h1 {
         color: #dae3f3;
         font-weight: bolder;
-        font-size: 160px;
+        font-size: 120px;
     }
 
     .aboutme-right {
@@ -173,7 +172,7 @@
         letter-spacing: -1.8px;
         text-decoration: none;
         font-size: 30px;
-        width: fit-content; /* 내용 길이에 맞는 너비 설정 */
+        width: fit-content;
     }
 
     .aboutme-right li strong {
@@ -252,12 +251,11 @@
         padding: 50px 20px;
         gap: 20px;
     }
-    img {
+    .aboutme-left img {
         width: 300px;
         height: 300px;
     }
     .aboutme-left {
-        width: 600px;
         height: 50vh;
         display: flex;
         flex-direction: column;
@@ -266,10 +264,10 @@
         position: relative;
     }
     .aboutme-title {
-        position: absolute; /* 절대 위치로 설정 */
-        top: 0; /* 부모 요소의 상단에 위치 */
-        left: 0; /* 부모 요소의 좌측에 위치 */
-        z-index: -1; /* Title을 C 뒤로 보내는 부분 */
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
     .aboutme-title h1 {
         color: #dae3f3;
@@ -281,8 +279,8 @@
         width: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: start;
+        align-items: start;
         gap: 20px;
     }
     .aboutme-right li {
@@ -292,7 +290,7 @@
         letter-spacing: -1.8px;
         text-decoration: none;
         font-size: 20px;
-        width: fit-content; /* 내용 길이에 맞는 너비 설정 */
+        width: fit-content;
     }
 
     .aboutme-right li strong {

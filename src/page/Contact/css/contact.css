@@ -10,10 +10,10 @@
 
 .ContactLeft {
     position: relative;
-    display: flex; /* 변경 */
-    flex-direction: column; /* 변경 */
-    justify-content: center; /* 변경: 세로로 가운데 정렬 */
-    align-items: center; /* 변경: 가로로 가운데 정렬 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .ContactTitle {
     position: absolute;

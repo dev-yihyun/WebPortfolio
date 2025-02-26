@@ -1,55 +1,57 @@
-/* .description-container,
-.description-left,
-.description-right,
-.description-box {
-    border: 1px solid red;
-} */
+.description-top a {
+    color: #0a0a0a;
+    cursor: pointer;
+}
 .description-container {
-    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+.description-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.description-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.description-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.description-box img {
+    object-fit: contain;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+    margin: 0px auto;
+}
+.description-title {
+    font-size: 32px;
+    text-align: left;
+}
+.description-box {
+    display: flex;
+    flex-direction: column;
+}
+.description-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 /* 큰 화면에 대한 스타일 */
 @media only screen and (min-width: 1025px) {
-    .description-container {
-        border: 1px solid red;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        padding: 50px 20px;
-    }
-
     .description-left {
-        /* display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 40vw;
-        height: 80vh;
-        align-items: end;
-        justify-content: space-evenly; */
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
         width: 500px;
     }
     .description-right {
-        /* display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 40vw;
-        align-items: start;
-        height: 80vh; */
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
         width: 500px;
-    }
-    .description-top {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
     }
     .description-top a {
         font-size: 40px;
@@ -57,131 +59,66 @@
     .description-box img {
         width: 400px;
         height: 300px;
-        object-fit: contain;
-        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
-        margin: 0px auto;
-    }
-    .description-title {
-        font-size: 32px;
-        text-align: left;
     }
     .description-box {
-        display: flex;
         gap: 15px;
-        flex-direction: column;
-    }
-    .description-content {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
     }
 }
 
 /* 중간 크기의 화면에 대한 스타일 */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .description-container {
-        border: 1px solid red;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 50px 20px;
-        gap: 20px;
-    }
     .description-left {
-        display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
+    }
+    .description-right {
+        width: 400px;
         gap: 20px;
     }
     .description-top {
         width: 400px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
     }
-    .description-box {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+    .description-top a {
+        cursor: pointer;
+        font-size: 40px;
     }
     .description-box img {
         width: 380px;
         height: 300px;
-        margin: 0 auto;
-        object-fit: contain;
-        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
     }
-    .description-top a {
-        font-size: 40px;
-        cursor: pointer;
-    }
-
-    .description-right {
-        width: 400px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    .description-box {
+        gap: 10px;
     }
 }
 
 /* 작은 화면에 대한 스타일 */
 @media only screen and (max-width: 600px) {
-    .description-box img {
-        width: 100px;
-        height: 100px;
-        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
-    }
-    .description-container {
-        padding: 50px 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-    }
     .description-left {
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
-    }
-    .description-top {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 20px;
-    }
-    .description-top .description-title {
-        font-size: 24px;
-    }
-    .description-top a {
-        font-size: 24px;
-        cursor: pointer;
-    }
-    .description-box {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 20px;
-    }
-    .description-box img {
-        margin: 0 auto;
-        width: 90%;
-        height: 90%;
-        object-fit: contain;
     }
     .description-right {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+        width: 100%;
     }
-    .description-content {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
+
+    .description-top {
+        width: 100%;
+    }
+    .description-top a {
+        font-size: 30px;
+    }
+    .description-top .description-title {
+        font-size: 30px;
+    }
+    .description-title {
+        font-size: 24px;
+    }
+    .description-box img {
+        width: 80%;
+        height: 80%;
+    }
+    .description-box {
+        width: 100%;
+        gap: 20px;
     }
 }

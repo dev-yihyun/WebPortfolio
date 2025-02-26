@@ -15,7 +15,6 @@ function Description({ ProjectInfo }) {
                     <div className="description-box">
                         <div className="description-top">
                             <h1 className="description-title font3">{ProjectInfo.projectName}</h1>
-
                             {ProjectInfo.projectGit === "" ? (
                                 <></>
                             ) : (
@@ -31,7 +30,7 @@ function Description({ ProjectInfo }) {
                                 </>
                             )}
                         </div>
-                        <img src={ProjectInfo.projectImg} alt="ProjectImg" />
+                        <img src={ProjectInfo.projectImg} alt="img" />
                     </div>
                     <div className="description-box">
                         <h1 className="description-title font3">Technical Stack</h1>
@@ -60,77 +59,6 @@ function Description({ ProjectInfo }) {
                     </div>
                 </div>
             </div>
-
-            {/* <div
-                style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    height: "100vh",
-                }}
-            >
-                <div
-                    style={{
-                        flex: "1 1 50%",
-                        backgroundColor: "lightblue",
-                        height: "50vh",
-                    }}
-                >
-                    Left
-                </div>
-
-                <div
-                    style={{
-                        flex: "1 1 50%",
-                        backgroundColor: "lightcoral",
-                        height: "50vh",
-                    }}
-                >
-                    Right
-                </div>
-            </div> */}
-
-            {/* <div className="Area4">
-                <div className="DescriptLeft">
-                    <div className="DescriptTop">
-                        <div className="DescriptTitle font3">
-                            <h1>projectName</h1>
-                        </div>
-                        <div className="DescriptLink">
-                            <a href="" target="_blank" rel="noreferrer noopener">
-                                <img alt="Github" />
-                            </a>
-                        </div>
-                    </div>
-                    <div className="DescriptMiddle">
-                        <div className="Descriptimg">
-                            <img alt="ProjectImg" />
-                        </div>
-                    </div>
-                    <div className="DescriptBottom">
-                        <div className="DescriptStack">
-                            <h1 className="font3">Technical Stack</h1>
-                            <div className="font4">
-                                <p>Item</p>;
-                            </div>
-                        </div>
-
-                        <div className="DescriptFunction">
-                            <h1 className="font3">Function</h1>
-                            <div className="font4">projectFunction</div>
-                        </div>
-                    </div>
-                </div>
-                <div className="DescriptRight">
-                    <div className="DescriptRItem">
-                        <h1 className="font3">Project Introduction</h1>
-                        <div className="font4">projectIntro</div>
-                    </div>
-                    <div className="DescriptRItem">
-                        <h1 className="font3">Review</h1>
-                        <div className="font4">projectReview</div>
-                    </div>
-                </div>
-            </div> */}
         </>
     );
 }

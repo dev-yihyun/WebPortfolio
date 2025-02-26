@@ -4,16 +4,14 @@ import React, { useRef, useState } from "react";
 function EmailBlock() {
     const form = useRef();
 
-    // 개별 입력 필드 상태 관리
     const [email, setEmail] = useState("");
     const [title, setTitle] = useState("");
     const [message, setMessage] = useState("");
 
     const sendEmail = (e) => {
         e.preventDefault();
-        // 입력값 검증
         if (!email.trim() || !title.trim() || !message.trim()) {
-            alert("양식을 정확히 입력해주세요.");
+            alert("모든 필드를 입력해주세요.");
             return;
         }
         emailjs
@@ -27,7 +25,6 @@ function EmailBlock() {
             )
             .then(
                 () => {
-                    // 성공 시 입력값 초기화
                     setEmail("");
                     setTitle("");
                     setMessage("");
@@ -45,7 +42,6 @@ function EmailBlock() {
 
     return (
         <form className="font4" ref={form} onSubmit={sendEmail}>
-            {/* 입력 값 변경을 감지하여 상태 업데이트 */}
             <input
                 type="text"
                 placeholder="Email"
