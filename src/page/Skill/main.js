@@ -2,8 +2,8 @@ import "../Skill/css/skill.css";
 
 const skills = {
     Language: ["JavaScript", "Python", "Kotlin", "Java"],
-    Frontend: ["React", "React-Query", "Recoil", "Styled Components"],
-    Backend: ["JSP", "Restful API", "Node.js"],
+    Frontend: ["React", "React-Query", "Recoil", "Styled Components", "WebRTC"],
+    Backend: ["JSP", "Restful API", "Node.js", "Socket.io"],
     DataBase: ["MySQL", "Oracle"],
     Tool: ["Git"],
 };
