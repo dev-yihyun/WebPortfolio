@@ -3,7 +3,7 @@ import "../Skill/css/skill.css";
 const skills = {
     Language: ["JavaScript", "Python", "Kotlin", "Java"],
     Frontend: ["React", "React-Query", "Recoil", "Styled Components", "WebRTC"],
-    Backend: ["JSP", "Restful API", "Node.js", "Socket.io"],
+    Backend: ["JSP", "Node.js", "Socket.io"],
     DataBase: ["MySQL", "Oracle"],
     Tool: ["Git"],
 };
@@ -18,7 +18,6 @@ const skillColors = {
     Recoil: "#60A3D9",
     "Styled Components": "#E8A0BF",
     JSP: "#82CCDD",
-    "Restful API": "#6C757D  ",
     "Node.js": "#8CC84B",
     MySQL: "#00758F",
     Oracle: "#F80000",
