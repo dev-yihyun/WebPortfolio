@@ -51,11 +51,15 @@ function Description({ ProjectInfo }) {
                     <div className="description-box">
                         <h1 className="description-title font3">Project Introduction</h1>
 
-                        <div className="description-content font4">{ProjectInfo.projectIntro}</div>
+                        <div className="description-content description-line-gap font4">
+                            {ProjectInfo.projectIntro}
+                        </div>
                     </div>
                     <div className="description-box">
                         <h1 className="description-title font3">Review</h1>
-                        <div className="description-content font4">{ProjectInfo.projectReview}</div>
+                        <div className="description-content description-line-gap font4">
+                            {ProjectInfo.projectReview}
+                        </div>
                     </div>
                 </div>
             </div>

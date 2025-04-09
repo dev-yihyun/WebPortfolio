@@ -45,6 +45,10 @@
     flex-direction: column;
     gap: 5px;
 }
+
+.description-line-gap {
+    line-height: 30px;
+}
 /* 큰 화면에 대한 스타일 */
 @media only screen and (min-width: 1025px) {
     .description-left {
