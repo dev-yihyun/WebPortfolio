@@ -1,8 +1,16 @@
 import "../Skill/css/skill.css";
 
 const skills = {
-    Language: ["JavaScript", "Python", "Kotlin", "Java"],
-    Frontend: ["React", "React-Query", "Recoil", "Styled Components", "WebRTC"],
+    Language: ["JavaScript", "TypeScript", "Python", "Kotlin", "Java"],
+    Frontend: [
+        "React",
+        "Next.js",
+        "React-Query",
+        "Recoil",
+        "Styled Components",
+        "Tailwind CSS",
+        "WebRTC",
+    ],
     Backend: ["JSP", "Node.js", "Socket.io"],
     DataBase: ["MySQL", "Oracle"],
     Tool: ["Git"],
@@ -22,6 +30,9 @@ const skillColors = {
     MySQL: "#00758F",
     Oracle: "#F80000",
     Git: "#B8BFC6",
+    TypeScript: "#3178C6",
+    "Next.js": "#000000",
+    "Tailwind CSS": "#06B6D4",
 };
 
 const getTextColor = (bgColor) => {
