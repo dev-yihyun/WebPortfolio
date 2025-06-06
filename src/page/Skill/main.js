@@ -11,7 +11,7 @@ const skills = {
         "Tailwind CSS",
         "WebRTC",
     ],
-    Backend: ["JSP", "Node.js", "Socket.io"],
+    Backend: ["Firebase", "Node.js", "JSP", "Socket.io"],
     DataBase: ["MySQL", "Oracle"],
     Tool: ["Git"],
 };
@@ -33,6 +33,7 @@ const skillColors = {
     TypeScript: "#3178C6",
     "Next.js": "#000000",
     "Tailwind CSS": "#06B6D4",
+    Firebase: "#FFCA28",
 };
 
 const getTextColor = (bgColor) => {
