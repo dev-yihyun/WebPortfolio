@@ -9,9 +9,8 @@ const skills = {
         "Recoil",
         "Styled Components",
         "Tailwind CSS",
-        "WebRTC",
-    ],
-    Backend: ["Firebase", "Node.js", "JSP", "Socket.io"],
+    ] /* "WebRTC" */,
+    Backend: ["Firebase", "Node.js"] /* , "JSP", "Socket.io" */,
     DataBase: ["MySQL", "Oracle"],
     Tool: ["Git"],
 };
