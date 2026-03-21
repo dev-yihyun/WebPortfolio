@@ -6,13 +6,15 @@ const skills = {
         "React",
         "Next.js",
         "React-Query",
+        "React-Hook-Form",
         "Recoil",
+        "Zustand",
         "Styled Components",
         "Tailwind CSS",
     ] /* "WebRTC" */,
-    Backend: ["Firebase", "Node.js"] /* , "JSP", "Socket.io" */,
+    Backend: ["Firebase", "Node.js", "AWS"] /* , "JSP", "Socket.io" */,
     DataBase: ["MySQL", "Oracle"],
-    Tool: ["Git"],
+    Tool: ["Git", "Figma"],
 };
 
 const skillColors = {
@@ -33,6 +35,10 @@ const skillColors = {
     "Next.js": "#000000",
     "Tailwind CSS": "#06B6D4",
     Firebase: "#FFCA28",
+    Figma: "#A259FF",
+    Zustand: "#443E38",
+    "React-Hook-Form": "#EC5990",
+    AWS: "#FF9900",
 };
 
 const getTextColor = (bgColor) => {
