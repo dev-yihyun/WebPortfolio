@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Descript from "./ui/Description";
 import ProjectCard from "./ui/ProjectCard";
 
@@ -38,7 +38,7 @@ import projectList from "./projectList";
 ] */
 
 function ProjectMain() {
-    const [init, setInit] = useState(projectList.find((item) => item.id === projectList.length));
+    const [init, setInit] = useState(projectList.find((item) => item.id === 0));
     const [showDescript, setShowDescript] = useState(false);
 
     const onChange = (id) => {
