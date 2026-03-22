@@ -1,5 +1,5 @@
 import emailjs from "@emailjs/browser";
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 function EmailBlock() {
     const form = useRef();
@@ -21,7 +21,7 @@ function EmailBlock() {
                 form.current,
                 {
                     publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
-                }
+                },
             )
             .then(
                 () => {
@@ -29,14 +29,16 @@ function EmailBlock() {
                     setTitle("");
                     setMessage("");
 
-                    alert("메일이 성공적으로 전송되었습니다.");
+                    alert("메일이 잘 전달됐어요 😊\n확인 후 빠르게 답변드릴게요!");
                     console.log("SUCCESS!");
                 },
                 (error) => {
-                    alert("메일 전송에 실패하였습니다.\n메일을 직접 전송해주시길 바랍니다.");
+                    alert(
+                        "메일 전송이 원활하지 않아요 😥\n깃허브나 다른 방법으로 연락 주셔도 좋아요!",
+                    );
                     console.error("FAILED...", error.text);
                     console.error("FAILED...", error);
-                }
+                },
             );
     };
 
