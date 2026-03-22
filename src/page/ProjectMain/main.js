@@ -38,7 +38,7 @@ import projectList from "./projectList";
 ] */
 
 function ProjectMain() {
-    const [init, setInit] = useState(projectList.find((item) => item.id === 0));
+    const [init, setInit] = useState(projectList.find((item) => item.id === 5));
     const [showDescript, setShowDescript] = useState(false);
 
     const onChange = (id) => {
