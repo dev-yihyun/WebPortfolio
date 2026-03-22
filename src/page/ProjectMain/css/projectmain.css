@@ -112,7 +112,25 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 5px;
+    /* Stack이 늘어나면 스크롤 기능 */
+    max-height: 80px;
+    overflow-y: auto;
 }
+
+/* 스크롤 커스터마이징 */
+.CardStack::-webkit-scrollbar {
+    width: 6px;
+}
+
+.CardStack::-webkit-scrollbar-thumb {
+    background: #b9d3f5;
+    border-radius: 10px;
+}
+
+.CardStack::-webkit-scrollbar-thumb:hover {
+    background: #7aa7e0;
+}
+
 .StackItem {
     background-color: #b9d3f5;
     color: white;
