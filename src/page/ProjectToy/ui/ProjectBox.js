@@ -1,15 +1,6 @@
-import React from "react";
-import { FaLink } from "react-icons/fa";
 import GitHub from "../../../assets/img/Icon_github.png";
 
-function ProjectBoxBlock({
-    projectImg,
-    projectName,
-    projectDate,
-    projectStack,
-    projectGit,
-    projectLink,
-}) {
+function ProjectBoxBlock({ projectImg, projectName, projectDate, projectStack, projectGit }) {
     return (
         <>
             <div className="ProjectBox font4">
@@ -37,11 +28,6 @@ function ProjectBoxBlock({
                         <a href={projectGit} target="_blank" rel="noreferrer noopener">
                             <img src={GitHub} alt="Github" />
                         </a>
-                        {projectLink === "" ? null : (
-                            <a href={projectLink} target="_blank" rel="noreferrer noopener">
-                                <FaLink />
-                            </a>
-                        )}
                     </div>
                 </div>
             </div>

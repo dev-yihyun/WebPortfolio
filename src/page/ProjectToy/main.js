@@ -1,4 +1,3 @@
-import React from "react";
 import "./css/projecttoy.css";
 import projectList from "./projectList";
 import ProjectBox from "./ui/ProjectBox";
@@ -11,7 +10,6 @@ import ProjectBox from "./ui/ProjectBox";
     projectDate: "2020.09.19~2020.09.20",
     projectStack: ["Javascript"],
     projectGit: "https://github.com/",
-    projectLink: ""
 }
 */
 
@@ -33,7 +31,6 @@ function ProjectToy() {
                                     projectStack={project.projectStack}
                                     projectGit={project.projectGit}
                                     projectImg={project.projectImg}
-                                    projectLink={project.projectLink}
                                 />
                             );
                         })}
