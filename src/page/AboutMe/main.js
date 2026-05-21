@@ -33,6 +33,17 @@ function AboutMe() {
                         <li>
                             <strong>코드의 재사용성</strong>을 높이는 것을 좋아합니다.
                         </li>
+                        <li>
+                            개발은 혼자가 아닌
+                            <strong> 함께 만드는 과정</strong>이라고 생각합니다.
+                        </li>
+                        {/* 
+                        <li>
+                            <strong>기록</strong>은 성장의 흔적이라고 생각합니다.
+                        </li>
+                        <li>
+                            <strong>이유 있는 코드</strong>를 작성하려 합니다.
+                        </li> */}
                     </div>
                 </ScrollFadeBlock>
             </div>
