@@ -37,13 +37,10 @@ function AboutMe() {
                             개발은 혼자가 아닌
                             <strong> 함께 만드는 과정</strong>이라고 생각합니다.
                         </li>
-                        {/* 
                         <li>
-                            <strong>기록</strong>은 성장의 흔적이라고 생각합니다.
+                            <strong>사용하기 쉬운 UI</strong>와 <strong>기억에 남는 UX</strong>를
+                            만드는 프론트엔드 개발자 입니다.
                         </li>
-                        <li>
-                            <strong>이유 있는 코드</strong>를 작성하려 합니다.
-                        </li> */}
                     </div>
                 </ScrollFadeBlock>
             </div>
