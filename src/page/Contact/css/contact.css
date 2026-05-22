@@ -101,8 +101,8 @@ textarea::placeholder {
         bottom: -145px;
     }
     .ContactMessage {
-        width: 600px;
-        font-size: 30px;
+        width: 620px;
+        font-size: 25px;
     }
 }
 /* 중간 크기의 화면에 대한 스타일 */
@@ -160,6 +160,6 @@ textarea::placeholder {
 
     .ContactMessage {
         width: 100%;
-        font-size: 18px;
+        font-size: 14px;
     }
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import Email from "../Contact/Email";
 import "../Contact/css/contact.css";
 
@@ -12,8 +11,10 @@ function Contact() {
                     </div>
                     <div className="ContactMessage">
                         <p>
-                            사용자 중심사고로 생각하며
-                            <br /> 사용자에게 좋은 서비스를 제공하고싶습니다.
+                            기능 구현을 넘어
+                            <br />
+                            비즈니스의 성공을 고민하는 동료를 찾으신다면
+                            <br />그 여정에 함께하고 싶습니다.
                         </p>
                     </div>
                 </div>
